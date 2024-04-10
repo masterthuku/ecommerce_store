@@ -10,7 +10,7 @@ import qs from "query-string";
     isFeatured?: boolean;
  }
 
- const getBillboard = async (query: Query): Promise<Product[]> => {
+ const getProducts = async (query: Query): Promise<Product[]> => {
 
     const url = qs.stringifyUrl({
         url: URL,
@@ -26,4 +26,4 @@ import qs from "query-string";
      return res.json();
  }
 
- export default getBillboard;
+ export default getProducts;
